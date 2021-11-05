@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+      "noImplicitAny": true,
+      "strict": true,
+      "noEmit": false,
+      "resolveJsonModule": true,
+      "noUnusedLocals": true,
+      "outDir": "src",
+      "target": "es2015",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "preserveConstEnums": true,
+      "removeComments": false,
+      "sourceMap": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "esModuleInterop": true,
+      "rootDir": "src",
+      "baseUrl": ".",
+    },
+    "include": [
+      "src/**/**.ts", 
+      "src/start.ts"    ],
+    "exclude": ["node_modules"]
+}
+  
