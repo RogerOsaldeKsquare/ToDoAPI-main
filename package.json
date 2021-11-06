@@ -4,10 +4,11 @@
   "author": "Roger Osalde",
   "description": "Project to test ORM's practice",
   "scripts": {
-    "start": "node ./dist/start.js",
+    "start": "pm2-runtime start ecosystem.config.js --env production",
     "build": "tsc",
     "postinstall": "npm run build",
-    "dev": "NODE_ENV=dev ts-node-dev --ignore-watch node_modules ./src/start.ts"
+    "heroku-postbuild": "npm install pm2",
+    "dev": "NODE_ENV=dev ts-node-dev --ignore-watch node_modules -/src/start.ts"
   },
   "license": "ISC",
   "dependencies": {
