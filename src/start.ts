@@ -1,4 +1,4 @@
-import { App } from './App';
+import { App } from './app';
 
 try {
   new App().start();
