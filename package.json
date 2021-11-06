@@ -4,9 +4,10 @@
   "author": "Roger Osalde",
   "description": "Project to test ORM's practice",
   "scripts": {
-    "start": "ts-node src/start.ts",
-    "postinstall": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./dist/start.js",
+    "build": "tsc",
+    "postinstall": "npm run build",
+    "dev": "NODE_ENV=dev ts-node-dev --ignore-watch node_modules ./src/start.ts"
   },
   "license": "ISC",
   "dependencies": {
@@ -19,6 +20,7 @@
     "http-status": "^1.5.0",
     "mongoose": "^6.0.12",
     "morgan": "^1.10.0",
+    "typescript": "^4.4.4",
     "winston": "^3.3.3"
   },
   "devDependencies": {
