@@ -5,6 +5,7 @@
   "description": "Project to test ORM's practice",
   "scripts": {
     "start": "ts-node src/start.ts",
+    "postinstall": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "ISC",
